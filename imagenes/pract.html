@@ -1,0 +1,107 @@
+<html>
+<style type="text/css">
+label{
+display:block;
+color:blue;
+}
+fieldset{
+width:220px;
+border-color:teal;
+padding:10px;
+margin:30px;
+-webkit-border-radius:10px;
+border-radius:10px;
+moz border-radius:10px;
+}
+
+fildset legend{
+color:#F9B806;
+font-weight:bold;
+}
+
+input.rounded{
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+-border-radius:6px;
+-moz-box-shadow:2px 2px 3px #666;
+-wedkit-box-shadow:2px 2px 3px #666;
+-box-shadow:2px 2px 3px #666;
+font-size:12px;
+padding:2px 2px;
+out line:0;
+padding-left:2px;
+border:1px solid#ccc;
+border-width:1px; 
+border-style:solid; 
+border-color:blue; 
+text-indent:30px;
+width:250px;
+height:32px;
+}
+
+input.rounded:focus{
+border:1px solid;
+border-color:orange;
+background-color:yellow;
+}
+input.nombre{
+background:#fff url(edit_icon.png)no-repeat left center;
+background-size:25px;
+class="rounded nombre"
+}
+
+input.fec{
+background:white url(folder_blue_mydocuments.png)no-repeat left center;
+background-size:25px;
+class="rounded fec"
+}
+
+input.{
+background:white url(email.png)no-repeat left center;
+background-size:25px;
+class="rounded fec"
+}
+
+form {
+background:dodgerblue;
+width:200px;
+height:350px;
+-webkit-border-radius:10px;
+border-radius:10px;
+moz border-radius:10px;
+padding:10px;
+}
+</style>
+<body>
+
+<fieldset>
+<legend>Datos personales</legend>
+<form name='form' action="" method="post">
+<label for="nombre">nombre</label>
+<input name='nombre' type='text' class="rounded nombre" placeholder="Escribe tu nombre" required><br> 
+
+<label for="appaterno">apellido paterno</label>
+<input name='appaterno' type='text' class="rounded nombre" placeholder="escribe tu apellido" required><br>
+
+<label for="apmaterno">apellido materno</label>
+<input name='apmaterno' type='text' class="rounded nombre" placeholder="escribe tu apellido" required><br>
+
+<label for="sexo">sexo</label>
+<input name='sexo' type='radio'value='hombre'checked='checked'/>hombre
+<input name='sexo' type='radio'value='mujer'/>mujer<br>
+
+<label for="edad">fecha de nacimiento</label>
+<input name='edad' type='date' class="rounded fec"required><br>
+
+<label for="ecivil">estado civil</label>
+<input name='ecivil' type='text'  class="rounded nombre"placeholder="escribe tu estado civil" required><br>
+
+<label for="correo">correo</label>
+<input name='correo' type='text' class="rounded nombre" placeholder="mi_correo@hotmail.com" required><br><br>
+
+<input name='btnguardar' type='submit'value='guardar'/>
+<input name='btngborrar' type='submit' value='borrar'/>
+</form>
+</fieldset>
+</body>
+</html>
